@@ -1,0 +1,4 @@
+USERNAME
+PASSWORD
+jan-c03.ipvanish.com
+tcp
