@@ -25,7 +25,7 @@ vpn_connection_start()
 #Selects random vpn server from list and connnects. 
 #Configure:
 #Setup ipvanish using this guide: https://www.ipvanish.com/vpn-setup/linux/#kalilinux-wrap
-#IMPORTANT:ipvanish python script looks for files in the users home dirctory. you may need to modify user directories below
+#IMPORTANT:ipvanish python script looks for files in the users home dirctory. you may need to modify user directories.
 #Place config file in /root/ipvanish/vpn_config.txt. Not the greatest solution, but it works.
 #Config file is 4 lines: Username, Password, Server and Connection Type(tcp or udp are the options)
 
@@ -40,7 +40,7 @@ vpn_connection_stop()
 #Parameters are 'start' or 'stop'
 #Configure:
 #Setup ipvanish using this guide: https://www.ipvanish.com/vpn-setup/linux/#kalilinux-wrap
-#IMPORTANT:ipvanish python script looks for files in the users home dirctory. you may need to modify user directories below
+#IMPORTANT:ipvanish python script looks for files in the users home dirctory. you may need to modify user directories
 #Place config file in /root/ipvanish/vpn_config.txt
 #Config file is 4 lines: Username, Password, Server and Connection Type(tcp or udp are the options)
 
