@@ -1,0 +1,36 @@
+# ### ## Welcome to the vpnserverhopper wiki!
+**Overview:**   
+Bash scripting tool that changes VPN server from list created of available servers. 
+
+**Purpose:**   
+Made to be easily incorporated in scripts where VPN server changes are required.
+
+**Requirements/Setup:**  
+Setup ipvanish using this guide: https://www.ipvanish.com/vpn-setup/linux/#kalilinux-wrap  
+ipvanish manager: https://github.com/vduseev/ipvanish  
+Python 3 with appdirs(Try: 'pip3 install appdirs')  
+
+**Usage Commands:**  
+./vpnserverhopper.py (create_server_list, vpn_connection_start, vpn_connection_stop)
+
+./vpnserverhopper.py create_server_list
+Creates server list using ipvanish manager: https://github.com/vduseev/ipvanish .
+Requirements: Python 3 and appdirs(Try: 'pip3 install appdirs').
+Setup: Download/git and place ipvanish manager files in a sub folder named 'ipvanish-master'.
+location modification: states is currently set at the location.  Refer to ipvanish manager project for additional settings.
+
+./vpnserverhopper.py vpn_connection_start
+Selects random vpn server from list and connects. 
+Setup ipvanish using this guide: https://www.ipvanish.com/vpn-setup/linux/#kalilinux-wrap.
+IMPORTANT:ipvanish python script looks for files in the users home dirctory. you may need to modify user directories.
+Place config file in /root/ipvanish/vpn_config.txt. Not the greatest solution, but it works.
+Config file is 4 lines: Username, Password, Server and Connection Type(tcp or udp are the options)
+
+./vpnserverhopper.py vpn_connection_stop
+Closes VPN connection
+Configure: Setup ipvanish using this guide: https://www.ipvanish.com/vpn-setup/linux/#kalilinux-wrap
+IMPORTANT:ipvanish python script looks for files in the users home dirctory. you may need to modify user directories
+Place config file in /root/ipvanish/vpn_config.txt
+Config file is 4 lines: Username, Password, Server and Connection Type(tcp or udp are the options) Sample file is included that only needs USERNAME and PASSWORD modified.
+
+
